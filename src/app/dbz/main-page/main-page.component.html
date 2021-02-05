@@ -1,0 +1,21 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<dir class="row">
+    <div class="col">
+        <app-personajes></app-personajes>        
+    </div>
+
+    <div class="col">
+        <!--El padre mainPage manda [] "nuevo" al hijo, el hijo manda por evento ()
+            nuevo personaje
+            al padre para q inserte y seprar. vemos conexion en 2 lados 
+        ESTA COMENTADO EL CODIGO PORQUE FUE LA VERSION 1 PARA VER COMO SE PASABA LA DATA-->
+        <!-- <app-agregar 
+            [nuevo]="nuevo"
+            (nuevoPersonaje)="agregarNuevoPersonaje( $event )"
+        ></app-agregar>         -->
+        <app-agregar [nuevo]="nuevo"></app-agregar>        
+
+    </div>
+</dir>
